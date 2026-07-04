@@ -47,6 +47,83 @@
 
 }
 /* ==========================
+   SEARCH
+========================== */
+
+#search{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:-30px;
+
+}
+
+.search-box{
+
+    width:100%;
+
+    max-width:700px;
+
+    display:flex;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:60px;
+
+    overflow:hidden;
+
+    box-shadow:0 0 25px rgba(30,94,255,.15);
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    padding:20px 25px;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:var(--text);
+
+    font-size:18px;
+
+}
+
+.search-box input::placeholder{
+
+    color:var(--text-secondary);
+
+}
+
+.search-box button{
+
+    width:80px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.search-box button:hover{
+
+    background:var(--primary-light);
+
+}
+/* ==========================
    HERO
 ========================== */
 
@@ -123,6 +200,61 @@
     transform:translateY(-5px);
 
     box-shadow:0 0 50px rgba(30,94,255,.75);
+
+}
+/* ==========================
+   STATS
+========================== */
+
+#stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 35px rgba(30,94,255,.25);
+
+}
+
+.card h2{
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+}
+
+.card span{
+
+    font-size:38px;
+
+    color:var(--primary);
+
+    font-weight:bold;
 
 }
 /* ==========================
@@ -242,5 +374,42 @@
     font-size:17px;
 
     font-weight:bold;
+
+}
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    margin-top:100px;
+
+    padding:70px 20px;
+
+    text-align:center;
+
+    border-top:1px solid var(--border);
+
+}
+
+footer h2{
+
+    font-size:34px;
+
+    letter-spacing:4px;
+
+    margin-bottom:10px;
+
+}
+
+footer p{
+
+    color:var(--primary);
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
 
 }
