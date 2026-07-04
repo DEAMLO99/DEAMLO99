@@ -1,12 +1,29 @@
+/* =====================================
+   DEAMLO99
+   Global Styles
+===================================== */
+
+/* Reset */
+
 *{
+
     margin:0;
+
     padding:0;
+
     box-sizing:border-box;
+
 }
 
+/* Smooth Scroll */
+
 html{
+
     scroll-behavior:smooth;
+
 }
+
+/* Body */
 
 body{
 
@@ -14,14 +31,15 @@ body{
 
     color:var(--text);
 
-    font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 
     overflow-x:hidden;
 
+    min-height:100vh;
+
 }
+
+/* Links */
 
 a{
 
@@ -31,28 +49,104 @@ a{
 
 }
 
-button{
+/* Images */
 
-    cursor:pointer;
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+/* Buttons */
+
+button{
 
     border:none;
 
     outline:none;
 
-}
+    cursor:pointer;
 
-img{
-
-    max-width:100%;
-
-    display:block;
+    transition:var(--transition);
 
 }
+
+/* Inputs */
+
+input{
+
+    border:none;
+
+    outline:none;
+
+    font:inherit;
+
+}
+
+/* Lists */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* Sections */
 
 section{
 
     width:100%;
 
     padding:90px 8%;
+
+}
+
+/* Container */
+
+.container{
+
+    width:min(100%,var(--container));
+
+    margin:auto;
+
+}
+
+/* Selection */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#090C13;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-light);
 
 }
