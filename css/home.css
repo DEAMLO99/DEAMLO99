@@ -125,3 +125,122 @@
     box-shadow:0 0 50px rgba(30,94,255,.75);
 
 }
+/* ==========================
+   FEATURED GAMES
+========================== */
+
+#games{
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.section-title p{
+
+    color:var(--text-secondary);
+
+}
+
+.games-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.game-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.game-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 40px rgba(30,94,255,.30);
+
+}
+
+.game-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.game-info{
+
+    padding:25px;
+
+}
+
+.game-info h3{
+
+    margin-bottom:12px;
+
+    font-size:24px;
+
+}
+
+.game-info p{
+
+    color:var(--text-secondary);
+
+    margin-bottom:25px;
+
+}
+
+.game-info button{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-light)
+    );
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+}
