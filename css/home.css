@@ -1,1 +1,73 @@
+/* ==========================
+   HERO
+========================== */
 
+#hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    max-width:850px;
+
+}
+
+.hero-content h1{
+
+    font-size:64px;
+
+    font-weight:900;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content p{
+
+    color:var(--text-secondary);
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+.hero-content button{
+
+    padding:18px 42px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border-radius:50px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow);
+
+}
+
+.hero-content button:hover{
+
+    transform:translateY(-4px);
+
+}
