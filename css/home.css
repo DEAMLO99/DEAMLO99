@@ -1,4 +1,52 @@
 /* ==========================
+   BACKGROUND
+========================== */
+
+.background{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:-2;
+
+    background:
+        radial-gradient(circle at top,#1E5EFF22 0%,transparent 35%),
+        radial-gradient(circle at bottom,#FF2B2B18 0%,transparent 35%),
+        linear-gradient(180deg,#05070D 0%,#090E16 100%);
+
+}
+
+/* طبقة علم العراق */
+
+.background::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("../assets/ui/iraq-flag.png");
+
+    background-repeat:no-repeat;
+
+    background-position:center;
+
+    background-size:55%;
+
+    opacity:.05;
+
+    filter:grayscale(100%);
+
+}
+/* ==========================
    HERO
 ========================== */
 
