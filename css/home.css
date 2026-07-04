@@ -96,26 +96,32 @@
 
 .hero-content button{
 
-    padding:18px 42px;
+    padding:18px 45px;
 
-    background:var(--primary);
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-light)
+    );
 
     color:white;
 
-    border-radius:50px;
+    border-radius:999px;
 
     font-size:18px;
 
-    font-weight:bold;
+    font-weight:700;
 
-    transition:var(--transition);
+    transition:.35s;
 
-    box-shadow:var(--shadow);
+    box-shadow:0 0 35px rgba(30,94,255,.45);
 
 }
 
 .hero-content button:hover{
 
-    transform:translateY(-4px);
+    transform:translateY(-5px);
+
+    box-shadow:0 0 50px rgba(30,94,255,.75);
 
 }
